@@ -19,7 +19,7 @@ class CountdownTimer {
 
       if (deltaTime < 0) {
         clearInterval(intervalId);
-        refs.divTimer.innerHTML = 'Все время вышло';
+        refs.divTimer.innerHTML = 'Время вышло!';
       }
     }, 1000);
   }
@@ -27,7 +27,7 @@ class CountdownTimer {
 
 const Timer = new CountdownTimer({
   selector: '#timer-1',
-  targetDate: new Date('May 19, 2021'),
+  targetDate: new Date('May 25, 2021'),
 });
 
 function updateClockface({ days, hours, mins, secs }) {
@@ -39,9 +39,7 @@ function updateClockface({ days, hours, mins, secs }) {
 
 function getTimeComponents(time) {
   const days = pad(Math.floor(time / (1000 * 60 * 60 * 24)));
-  const hours = pad(
-    Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
-  );
+  const hours = pad(Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
   const mins = pad(Math.floor((time % (1000 * 60 * 60)) / (1000 * 60)));
   const secs = pad(Math.floor((time % (1000 * 60)) / 1000));
 

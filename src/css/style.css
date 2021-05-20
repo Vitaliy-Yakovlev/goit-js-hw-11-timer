@@ -5,7 +5,8 @@ body {
 .timer {
   display: flex;
   justify-content: center;
-  color: rgb(58, 61, 60);
+  color: rgb(238, 18, 18);
+  font-size: 70px;
 }
 
 .field {
