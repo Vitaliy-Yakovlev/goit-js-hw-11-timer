@@ -1,0 +1,33 @@
+body {
+  background-color: rgb(43, 45, 42);
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  color: rgb(58, 61, 60);
+}
+
+.field {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 20px;
+  font-size: 12px;
+  padding: 20px 0 0 50px;
+  color: #daf6ff;
+  text-shadow: 0 0 20px #0aafe6, 0 0 20px rgba(10, 175, 230, 0);
+}
+
+.value {
+  letter-spacing: 15px;
+  font-size: 80px;
+  padding: 5px 0;
+}
+
+.label {
+  letter-spacing: 2px;
+  font-size: 24px;
+}
