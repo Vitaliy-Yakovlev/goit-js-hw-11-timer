@@ -3,12 +3,13 @@ class CountdownTimer {
     this.selector = document.querySelector(selector);
     this.targetDate = targetDate;
     this.spanDays = this.selector.querySelector('span[data-value="days"]');
-    this.spanhHours = this.selector.querySelector('span[data-value="hours"]');
+    this.spahnHours = this.selector.querySelector('span[data-value="hours"]');
     this.spanMins = this.selector.querySelector('span[data-value="mins"]');
     this.spanSecs = this.selector.querySelector('span[data-value="secs"]');
 
     this.timer();
   }
+
   timer() {
     const intervalId = setInterval(() => {
       const deltaTime = this.targetDate - Date.now();
@@ -38,7 +39,7 @@ class CountdownTimer {
 
   updateClockface({ days, hours, mins, secs }) {
     this.spanDays.textContent = `${days}`;
-    this.spanhHours.textContent = `${hours}`;
+    this.spahnHours.textContent = `${hours}`;
     this.spanMins.textContent = `${mins}`;
     this.spanSecs.textContent = `${secs}`;
   }
@@ -46,5 +47,5 @@ class CountdownTimer {
 
 const Timer = new CountdownTimer({
   selector: '#timer-1',
-  targetDate: new Date('May 25, 2021'),
+  targetDate: new Date('October 31, 2021'),
 });
